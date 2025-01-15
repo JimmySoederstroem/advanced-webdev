@@ -1,0 +1,71 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: navy;
+    padding: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navigation a:hover {
+    background: white;
+    transition: 0.5s;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background: lightskyblue;
+}
+
+#about, #services {
+    background: navy;
+    color: white;
+}
+
+#contact {
+    background: lightskyblue;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: navy;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
