@@ -7,76 +7,75 @@
     <title>Single Page Website (Combined)</title>
 
     <!-- Inline CSS -->
-    <style>
-        body, h1, h2, p, ul {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+<style>
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
 
-        body {
-            line-height: 1.6;
-        }
+body {
+    line-height: 1.6;
+}
 
-        header {
-            background-color: navy;
-            padding: 10px;
-        }
+header {
+    background-color: black;
+    padding: 10px;
+}
 
-        .navigation {
-            display: flex;
-            justify-content: center;
-        }
+.navigation {
+    display: flex;
+    justify-content: left;
+}
 
-        .navigation li {
-            list-style: none;
-            margin: 0 15px;
-        }
+.navigation li {
+    float: left;
+    margin: 0 15px;
+}
 
-        .navigation a {
-            text-decoration: none;
-            color: white;
-        }
+.navigation a {
+    font-family: "Brush Script MT", cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    
+}
 
-        .navigation a:hover {
-            background: white;
-            transition: 0.5s;
-            color: black;
-            border-radius: 25px;
-            padding: 10px;
-            font-weight: 600;
-        }
+section {
+    padding: 50px;
+    text-align: center;
+}
 
-        section {
-            padding: 50px;
-            text-align: center;
-        }
+#home {
+    background: white;
+}
 
-        #home {
-            background: lightskyblue;
-        }
+#about, #services {
+    background: white;
+    color: black;
+}
 
-        #about, #services {
-            background: navy;
-            color: white;
-        }
+ul {
+    list-style: none;
+}
 
-        #contact {
-            background: lightskyblue;
-        }
+#contact {
+    background: white;
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: navy;
-            color: white;
-        }
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+}
 
-        @media (max-width: 600px) {
-            .navigation {
-                flex-direction: column;
-            }
-        }
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
+
     </style>
 </head>
 <body>

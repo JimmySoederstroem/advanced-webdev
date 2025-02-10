@@ -9,34 +9,26 @@ body {
 }
 
 header {
-    background-color: navy;
+    background-color: black;
     padding: 10px;
 }
 
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .navigation li {
-    list-style: none;
+    float: left;
     margin: 0 15px;
 }
 
 .navigation a {
+    font-family: "Brush Script MT", cursive;
     text-decoration: none;
     color: white;
+    font-size: 25px;
     
-}
-
-.navigation a:hover {
-    background: white;
-    transition: 0.5s;
-    color: black;
-    border-radius: 25px;
-    padding: 10px;
-    font-weight: 600;
-
 }
 
 section {
@@ -45,22 +37,26 @@ section {
 }
 
 #home {
-    background: lightskyblue;
+    background: white;
 }
 
 #about, #services {
-    background: navy;
-    color: white;
+    background: white;
+    color: black;
+}
+
+ul {
+    list-style: none;
 }
 
 #contact {
-    background: lightskyblue;
+    background: white;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: navy;
+    background: black;
     color: white;
 }
 
