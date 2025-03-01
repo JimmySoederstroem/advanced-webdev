@@ -1,0 +1,3 @@
+[submodule "ReactIntro/mypage"]
+	path = ReactIntro/mypage
+	url = https://github.com/JimmySoederstroem/advanced-webdev.git
