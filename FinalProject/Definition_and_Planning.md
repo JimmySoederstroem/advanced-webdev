@@ -150,6 +150,17 @@ Outcome: User successfully downloads an expense report for offline use.
 
 ![Registration](https://github.com/user-attachments/assets/a15c9d57-eb1f-4eec-a13a-5b9e5a7c8d47)
 
+![Login](https://github.com/user-attachments/assets/4fb9524a-4ea4-47bf-a21d-c31a5b1281ca)
+
+![Dashboard](https://github.com/user-attachments/assets/fa6f9486-4577-480b-9190-b2be2ba75aee)
+
+![Add expense](https://github.com/user-attachments/assets/cfaeb044-f19d-40e7-ba15-fbedf33e6482)
+
+![Reports](https://github.com/user-attachments/assets/752e670f-3317-46e7-821b-7d453e1d2a12)
+
+![Settings](https://github.com/user-attachments/assets/bb8e7a7d-2542-43a8-abbf-5096907e2806)
+
+**Colors will be added during the implementation!**
 
 ## 4. Information Architecture and Technical Design
 
