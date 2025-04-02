@@ -174,14 +174,14 @@ Frontend: React
 
 Backend: Node.js with Express
 
-Database: MongoDB
+Database: PostgreSQL
 
 APIs: REST API
 
 Hosting: Google Cloud
 
 
-Database Schema (MongoDB/PostgreSQL)
+Database Schema (PostgreSQL)
 
 Users Table: id, name, email, password_hash
 
