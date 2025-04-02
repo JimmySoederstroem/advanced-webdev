@@ -50,7 +50,7 @@ Behavior: Primarily mobile user; prefers push notifications and visual data repr
 
 ## 2. Use Cases and User Flows
 
-1. User Registers an Account (Authentication)
+**1. User Registers an Account (Authentication)**
 
 Actors: User, System
 
@@ -70,7 +70,8 @@ User receives a confirmation email and can now log in.
 
 Outcome: User successfully registers and can start using the app.
 
-2. User Adds a New Expense (Data Entry)
+
+**2. User Adds a New Expense (Data Entry)**
 
 Actors: User, System
 
@@ -88,7 +89,8 @@ System updates total spending and displays the new entry.
 
 Outcome: Expense is successfully added and visible in the dashboard.
 
-3. User Views Expense Reports (Data Visualization)
+
+**3. User Views Expense Reports (Data Visualization)**
 
 Actors: User, System
 
@@ -106,7 +108,8 @@ User can filter by date range, category, or custom tags.
 
 Outcome: User gains insights into spending patterns through graphical reports.
 
-4. User Sets a Budget and Gets Alerts (Budgeting Feature)
+
+**4. User Sets a Budget and Gets Alerts (Budgeting Feature)**
 
 Actors: User, System
 
@@ -124,7 +127,8 @@ If expenses exceed 100%, the system sends an alert.
 
 Outcome: User is notified when approaching or exceeding budget limits.
 
-5. User Exports Transactions as CSV/PDF (Data Exporting)
+
+**5. User Exports Transactions as CSV/PDF (Data Exporting)**
 
 Actors: User, System
 
@@ -134,7 +138,7 @@ Flow of Events:
 
 User goes to "Export Data" section.
 
-User selects a date range and chooses CSV or PDF format.
+User selects a date range and exports PDF.
 
 System generates the file and provides a download link.
 
@@ -144,7 +148,8 @@ Outcome: User successfully downloads an expense report for offline use.
 
 ## 3. UI Prototypes
 
-Add something
+![Registration](https://github.com/user-attachments/assets/a15c9d57-eb1f-4eec-a13a-5b9e5a7c8d47)
+
 
 ## 4. Information Architecture and Technical Design
 
