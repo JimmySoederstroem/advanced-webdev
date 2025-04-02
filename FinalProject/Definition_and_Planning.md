@@ -128,7 +128,7 @@ If expenses exceed 100%, the system sends an alert.
 Outcome: User is notified when approaching or exceeding budget limits.
 
 
-**5. User Exports Transactions as CSV/PDF (Data Exporting)**
+**5. User Exports Transactions as PDF (Data Exporting)**
 
 Actors: User, System
 
