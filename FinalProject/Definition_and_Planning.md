@@ -148,7 +148,7 @@ Outcome: User successfully downloads an expense report for offline use.
 
 ## 3. UI Prototypes
 
-<<<<<<< HEAD
+
 
 =======
 ![Registration](https://github.com/user-attachments/assets/a15c9d57-eb1f-4eec-a13a-5b9e5a7c8d47)
@@ -164,7 +164,7 @@ Outcome: User successfully downloads an expense report for offline use.
 ![Settings](https://github.com/user-attachments/assets/bb8e7a7d-2542-43a8-abbf-5096907e2806)
 
 **Colors will be added during the implementation!**
->>>>>>> eccc2f27e9025ddd3880b4cf172f7419e0bba18f
+
 
 ## 4. Information Architecture and Technical Design
 
