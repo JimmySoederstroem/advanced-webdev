@@ -144,7 +144,7 @@ Outcome: User successfully downloads an expense report for offline use.
 
 ## 3. UI Prototypes
 
-Add something
+
 
 ## 4. Information Architecture and Technical Design
 
@@ -154,9 +154,9 @@ Frontend: React
 
 Backend: Node.js with Express
 
-Database: MongoDB/PostgreSQL
+Database: MongoDB
 
-APIs: RESTful Web APIs
+APIs: REST API
 
 Hosting: Google Cloud
 
