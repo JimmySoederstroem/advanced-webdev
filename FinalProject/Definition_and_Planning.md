@@ -50,7 +50,7 @@ Behavior: Primarily mobile user; prefers push notifications and visual data repr
 
 ## 2. Use Cases and User Flows
 
-1. User Registers an Account (Authentication)
+**1. User Registers an Account (Authentication)**
 
 Actors: User, System
 
@@ -70,7 +70,8 @@ User receives a confirmation email and can now log in.
 
 Outcome: User successfully registers and can start using the app.
 
-2. User Adds a New Expense (Data Entry)
+
+**2. User Adds a New Expense (Data Entry)**
 
 Actors: User, System
 
@@ -88,7 +89,8 @@ System updates total spending and displays the new entry.
 
 Outcome: Expense is successfully added and visible in the dashboard.
 
-3. User Views Expense Reports (Data Visualization)
+
+**3. User Views Expense Reports (Data Visualization)**
 
 Actors: User, System
 
@@ -106,7 +108,8 @@ User can filter by date range, category, or custom tags.
 
 Outcome: User gains insights into spending patterns through graphical reports.
 
-4. User Sets a Budget and Gets Alerts (Budgeting Feature)
+
+**4. User Sets a Budget and Gets Alerts (Budgeting Feature)**
 
 Actors: User, System
 
@@ -124,7 +127,8 @@ If expenses exceed 100%, the system sends an alert.
 
 Outcome: User is notified when approaching or exceeding budget limits.
 
-5. User Exports Transactions as CSV/PDF (Data Exporting)
+
+**5. User Exports Transactions as PDF (Data Exporting)**
 
 Actors: User, System
 
@@ -134,7 +138,7 @@ Flow of Events:
 
 User goes to "Export Data" section.
 
-User selects a date range and chooses CSV or PDF format.
+User selects a date range and exports PDF.
 
 System generates the file and provides a download link.
 
@@ -144,7 +148,23 @@ Outcome: User successfully downloads an expense report for offline use.
 
 ## 3. UI Prototypes
 
+<<<<<<< HEAD
 
+=======
+![Registration](https://github.com/user-attachments/assets/a15c9d57-eb1f-4eec-a13a-5b9e5a7c8d47)
+
+![Login](https://github.com/user-attachments/assets/4fb9524a-4ea4-47bf-a21d-c31a5b1281ca)
+
+![Dashboard](https://github.com/user-attachments/assets/fa6f9486-4577-480b-9190-b2be2ba75aee)
+
+![Add expense](https://github.com/user-attachments/assets/cfaeb044-f19d-40e7-ba15-fbedf33e6482)
+
+![Reports](https://github.com/user-attachments/assets/752e670f-3317-46e7-821b-7d453e1d2a12)
+
+![Settings](https://github.com/user-attachments/assets/bb8e7a7d-2542-43a8-abbf-5096907e2806)
+
+**Colors will be added during the implementation!**
+>>>>>>> eccc2f27e9025ddd3880b4cf172f7419e0bba18f
 
 ## 4. Information Architecture and Technical Design
 
