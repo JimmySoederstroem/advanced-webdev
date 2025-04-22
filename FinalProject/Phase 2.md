@@ -155,3 +155,24 @@ TEST: Logout Successful.
     * Checkboxes for terms and "remember me".
 * **Responsiveness:** Basic responsiveness was considered (e.g., using CSS Grid for reports layout), but thorough testing and refinement across different screen sizes were not part of this phase.
 * **Styling:** CSS (`App.css`, `Settings.css`) was used for styling, aiming for a clean and functional appearance based on the mockups.
+* ![image](https://github.com/user-attachments/assets/bdc6146d-9c2a-4904-8f84-21e9caa0f0c0)
+* ![image](https://github.com/user-attachments/assets/02f7d7ef-ec12-4318-b674-9edf99f93598)
+* ![image](https://github.com/user-attachments/assets/f2d142c8-c9e4-4c03-8e18-ba0f975b6dc4)
+* ![image](https://github.com/user-attachments/assets/11ca2f43-3fe7-4056-bb36-265363be9f25)
+* ![image](https://github.com/user-attachments/assets/87ac702d-557f-4acd-9240-3176d5c6b0c5)
+* ![image](https://github.com/user-attachments/assets/cc1f86f0-83ce-45d6-89ec-3ab7f6bfe6ae)
+* **Pdf export
+* ![image](https://github.com/user-attachments/assets/bf067082-8888-43b9-b522-e7617d5942d4)
+* ![image](https://github.com/user-attachments/assets/bea537a6-92d9-4cfc-9dfa-73893e447c41)
+* ![image](https://github.com/user-attachments/assets/7092b96c-a6f7-450b-885f-5ccb57c8b99b)
+* ![image](https://github.com/user-attachments/assets/741d4a4b-c409-4afe-a40d-d702b41492da)
+
+
+
+
+
+
+
+
+
+
