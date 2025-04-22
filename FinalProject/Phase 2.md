@@ -143,7 +143,7 @@ TEST: Logout Successful.
 
 ## 9. User interface and interaction
 
-* **Design Basis:** The UI implementation aimed to follow the structure and layout presented in the provided wireframe mockups (`Untitled.pdf`).
+* **Design Basis:** The UI implementation aimed to follow the structure and layout presented in the planning phase with a few improvements.
 * **Layout:** A sidebar navigation layout was implemented for authenticated users, providing access to different application sections (Dashboard, Add Expense, View Expenses, Reports, Settings). Login, Register, and other public pages use a centered layout.
 * **Key UI Elements:**
     * Forms for registration, login, password reset, adding expenses, and settings.
@@ -152,6 +152,6 @@ TEST: Logout Successful.
     * Pie charts on the Reports page for visual spending analysis.
     * A filterable, scrollable table (`ExpenseList`) for displaying expense details.
     * Dropdowns for selecting categories and currency.
-    * Checkboxes for terms and "remember me" (note: "remember me" logic wasn't fully implemented).
+    * Checkboxes for terms and "remember me".
 * **Responsiveness:** Basic responsiveness was considered (e.g., using CSS Grid for reports layout), but thorough testing and refinement across different screen sizes were not part of this phase.
 * **Styling:** CSS (`App.css`, `Settings.css`) was used for styling, aiming for a clean and functional appearance based on the mockups.
