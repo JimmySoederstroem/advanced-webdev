@@ -1,0 +1,23 @@
+# Node modules
+FinalProject/frontend/node_modules/
+FinalProject/backend/node_modules/
+
+# Env files
+FinalProject/backend/.env
+
+# Build output
+FinalProject/frontend/dist/
+
+# Logs
+*.log
+FinalProject/frontend/*.log
+FinalProject/backend/*.log
+/home/jimmy/.npm/_logs/
+
+# Test reports/cache
+FinalProject/frontend/playwright-report/
+FinalProject/frontend/test-results/
+
+# OS files
+.DS_Store
+Thumbs.db

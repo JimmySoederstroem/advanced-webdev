@@ -1,0 +1,167 @@
+/* src/App.css */
+
+/* Reset and Body Styles */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #f0f2f5; color: #333; line-height: 1.6; }
+
+/* --- Sidebar Layout --- */
+.app-layout { display: flex; min-height: 100vh; }
+.sidebar-nav { width: 240px; background-color: #343a40; color: #f8f9fa; padding: 20px 0; display: flex; flex-direction: column; flex-shrink: 0; }
+.sidebar-header { padding: 0 20px 20px 20px; margin-bottom: 15px; border-bottom: 1px solid #495057; }
+.sidebar-header h3 { color: #ffffff; margin: 0; text-align: center; font-size: 1.4rem; }
+.sidebar-nav .nav-link { display: block; color: #adb5bd; text-decoration: none; padding: 12px 20px; margin: 2px 0; font-size: 1rem; transition: background-color 0.2s ease, color 0.2s ease; border-left: 3px solid transparent; }
+.sidebar-nav .nav-link:hover { background-color: #495057; color: #ffffff; } /* Keep nav link hover */
+.sidebar-nav .nav-link.active { background-color: #007bff; color: #ffffff; font-weight: 500; border-left: 3px solid #ffffff; }
+.sidebar-nav .logout-button { background-color: transparent; color: #dc3545; border: 1px solid #dc3545; padding: 10px 20px; border-radius: 5px; cursor: pointer; text-align: center; font-size: 1rem; font-weight: 500; margin: auto 20px 10px 20px; transition: background-color 0.2s ease, color 0.2s ease; width: auto; }
+/* REMOVED hover for logout button */
+/* .sidebar-nav .logout-button:hover:not(:disabled) { background-color: #dc3545; color: #ffffff; } */
+
+/* Main Content Area */
+.main-content { flex-grow: 1; padding: 30px 40px; background-color: #ffffff; overflow-y: auto; }
+.App { width: 100%; max-width: none; margin: 0; padding: 0; background-color: transparent; box-shadow: none; border-radius: 0; }
+
+/* --- Styles for Centered Auth Forms (Login/Register) --- */
+.auth-container { display: flex; justify-content: center; align-items: center; min-height: 80vh; }
+.login-container, .register-container { max-width: 400px; width: 100%; margin: 20px; padding: 30px 40px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border: 1px solid #dee2e6; }
+
+/* --- General Element Styles (Headings, Forms, Buttons, Tables) --- */
+h2 { text-align: left; margin-top: 0; color: #343a40; padding-bottom: 15px; margin-bottom: 30px; font-weight: 600; border-bottom: 1px solid #dee2e6; }
+h3 { margin-top: 30px; margin-bottom: 15px; font-size: 1.3rem; color: #495057; }
+.form-group { margin-bottom: 20px; }
+label { display: block; margin-bottom: 8px; font-weight: 500; color: #495057; }
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; font-size: 1rem; transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+input:focus, textarea:focus, select:focus { border-color: #80bdff; outline: 0; box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+.login-container input[type="email"], .login-container input[type="password"], .register-container input[type="text"], .register-container input[type="email"], .register-container input[type="password"] { border-radius: 25px; padding: 12px 15px; }
+textarea { min-height: 80px; }
+.terms-group { display: flex; align-items: center; margin-bottom: 25px; }
+.terms-group input[type="checkbox"] { width: auto; margin-right: 10px; }
+.terms-group label { margin-bottom: 0; font-weight: normal; color: #6c757d; font-size: 0.9em; }
+.terms-group label a { color: #007bff; text-decoration: none; }
+.terms-group label a:hover { text-decoration: underline; }
+
+/* --- Button Styling (Simplified - Green Default, No Hover) --- */
+/* General button style */
+button {
+  background-color: #4CAF50; /* Default: Green */
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out; /* Keep transition */
+  margin-top: 10px;
+  width: auto;
+}
+/* REMOVED hover rule for general button */
+/* button:hover:not(:disabled) { background-color: #45a049; } */
+
+/* Primary submit button style (Login/Register mostly) */
+button.submit-button {
+  width: 100%;
+  background-color: #4CAF50; /* Default: Green */
+  padding: 12px 18px;
+  border-radius: 25px; /* Keep rounded */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/* REMOVED hover rule for submit button */
+/* button.submit-button:hover:not(:disabled) { background-color: #45a049; } */
+
+/* Disabled state keeps ORANGE */
+button:disabled {
+    background-color: #ffc107; /* Orange for disabled */
+    border-color: #ffc107;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+/* Delete button style in tables - Overrides default green */
+.delete-button {
+    background-color: transparent !important; color: #dc3545 !important; border: 1px solid #dc3545 !important; padding: 4px 8px !important; font-size: 0.85rem !important; border-radius: 4px !important; line-height: 1 !important; width: auto !important; margin: 0 !important;
+}
+/* REMOVED hover rule for delete button */
+/* .delete-button:hover:not(:disabled) { background-color: #dc3545 !important; color: white !important; } */
+
+
+/* --- Centered Form Styles (Login/Register) --- */
+.login-container form.centered-form, .register-container form.centered-form { display: flex; flex-direction: column; }
+.centered-form .form-group { width: 100%; margin-bottom: 20px; }
+.centered-form input { text-align: left; }
+.centered-form .terms-group { display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 25px; }
+.centered-form .terms-group input[type="checkbox"] { width: auto; margin-right: 8px; }
+.centered-form .terms-group label { margin: 0; text-align: left; }
+.centered-form .form-links-row { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 20px; font-size: 0.9em; }
+.centered-form .remember-me { display: flex; align-items: center; }
+.centered-form .remember-me input[type="checkbox"] { width: auto; margin-right: 6px; }
+.centered-form .remember-me label { margin-bottom: 0; font-weight: normal; color: #6c757d; }
+.centered-form .form-links-row a { color: #007bff; text-decoration: none; }
+.centered-form .form-links-row a:hover { text-decoration: underline; }
+.centered-form .login-link, .centered-form .register-link { text-align: center; margin-top: 20px; width: 100%; font-size: 0.9em; color: #6c757d; }
+.centered-form .login-link a, .centered-form .register-link a { color: #007bff; text-decoration: none; font-weight: 500; margin: 0 5px; }
+.centered-form .login-link a:hover, .centered-form .register-link a:hover { text-decoration: underline; }
+.centered-form .error-message, .centered-form .success-message { width: 100%; text-align: center; margin-top: 0; margin-bottom: 15px; }
+.centered-form button.submit-button { width: 100%; }
+
+/* --- Table Styles --- */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border-bottom: 1px solid #dee2e6; padding: 12px 15px; text-align: left; }
+th { background-color: #f8f9fa; font-weight: 600; color: #495057; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background-color: #f8f9fa; }
+/* Removed table row hover */
+/* tbody tr:hover { background-color: #e9ecef; } */
+
+/* --- Reports Page Specific Styles --- */
+.reports-layout-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 30px; align-items: flex-start; margin-bottom: 30px; }
+.charts-grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.chart-container { background-color: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #dee2e6; box-shadow: 0 1px 3px rgba(0,0,0,0.05); text-align: center; min-height: 380px; display: flex; flex-direction: column; justify-content: center; }
+.chart-container h3 { margin-top: 0; margin-bottom: 15px; font-size: 1.1rem; color: #495057; border-bottom: 1px solid #dee2e6; padding-bottom: 10px; }
+.chart-container.loading, .chart-container.empty { color: #6c757d; font-style: italic; display: flex; align-items: center; justify-content: center; height: 380px; }
+.expenses-list-section { margin-top: 0; padding: 20px; border: 1px solid #dee2e6; border-radius: 8px; background-color: #fdfdfd; }
+.expenses-list-section h3 { margin-top: 0; margin-bottom: 15px; font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.filter-container { margin-bottom: 15px; max-width: none; }
+.filter-container label { font-weight: 500; margin-bottom: 5px; }
+.table-container { max-height: 500px; overflow-y: auto; border: 1px solid #dee2e6; border-radius: 6px; margin-top: 10px; background-color: #fff; }
+.table-container table { margin-top: 0; box-shadow: none; border-radius: 0; border: none; }
+.table-container th { position: sticky; top: 0; background-color: #f8f9fa; z-index: 1; }
+.export-section { margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6; text-align: right; }
+
+/* --- Message Styling --- */
+.error-message { color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; padding: 10px 15px; border-radius: 4px; margin-top: 15px; margin-bottom: 15px; font-size: 0.9em; text-align: left; }
+.success-message { color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 10px 15px; border-radius: 4px; margin-top: 15px; margin-bottom: 15px; font-size: 0.9em; text-align: left; }
+.login-container .error-message, .register-container .error-message, .login-container .success-message, .register-container .success-message { text-align: center; margin-top: 0; }
+
+/* Recharts specific overrides (optional) */
+.recharts-legend-item { margin-right: 10px !important; }
+.recharts-tooltip-wrapper { border: 1px solid #ccc !important; box-shadow: 2px 2px 5px rgba(0,0,0,0.1) !important; border-radius: 4px !important; background-color: rgba(255, 255, 255, 0.9) !important; }
+
+/* Styles for Dashboard Summary Section */
+.dashboard-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 40px; }
+.summary-card { background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e9ecef; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06); transition: box-shadow 0.3s ease; }
+.summary-card:hover { box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); }
+.summary-card h4 { margin-top: 0; margin-bottom: 12px; font-size: 0.95rem; color: #6c757d; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+.summary-card p { font-size: 1.8rem; font-weight: 600; color: #343a40; margin-bottom: 10px; line-height: 1.2; }
+.budget-progress { margin-top: 15px; }
+.progress-bar-container { background-color: #e9ecef; border-radius: 5px; height: 8px; width: 100%; overflow: hidden; margin-bottom: 5px; }
+.progress-bar-fill { height: 100%; border-radius: 5px; transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out; }
+.budget-progress span { font-size: 0.8em; color: #6c757d; display: block; text-align: right; }
+.warning-text { font-size: 0.85em; font-weight: bold; margin-top: 8px; text-align: center; }
+.budget-warning { color: #ffc107; }
+.budget-exceeded { color: #dc3545; }
+.no-budget-text { font-size: 0.9em !important; font-style: italic; color: #6c757d !important; margin-top: 15px; }
+.no-budget-text a { color: #007bff; text-decoration: none;}
+.no-budget-text a:hover { text-decoration: underline;}
+.recent-expenses { margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6; }
+.recent-expenses h3 { margin-top: 0; margin-bottom: 15px; font-size: 1.3rem; color: #495057;}
+
+/* Settings Page Specific Styles */
+.settings-container { max-width: 600px; }
+.settings-container .form-group { margin-bottom: 25px; }
+.budget-input-group { position: relative; }
+.budget-input-group label { display: block; margin-bottom: 8px; }
+.budget-input-group input[type="number"] { padding-left: 30px; }
+.currency-symbol { position: absolute; left: 12px; top: 43px; color: #6c757d; font-size: 1rem; pointer-events: none; }
+.settings-container select { cursor: pointer; }
+.settings-container button[type="submit"] { padding: 12px 25px; min-width: 150px; width: auto; }
