@@ -133,6 +133,33 @@ tbody tr:nth-child(even) { background-color: #f8f9fa; }
 .success-message { color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 10px 15px; border-radius: 4px; margin-top: 15px; margin-bottom: 15px; font-size: 0.9em; text-align: left; }
 .login-container .error-message, .register-container .error-message, .login-container .success-message, .register-container .success-message { text-align: center; margin-top: 0; }
 
+/* src/App.css */
+
+/* ... (keep all existing styles) ... */
+
+/* --- Budget Alert Styles --- */
+.budget-alert {
+  padding: 15px 20px;
+  margin-bottom: 25px; /* Space below the alert */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.budget-alert.alert-warning {
+  color: #856404; /* Dark yellow/brown text */
+  background-color: #fff3cd; /* Light yellow background */
+  border-color: #ffeeba; /* Lighter yellow border */
+}
+
+.budget-alert.alert-exceeded {
+  color: #721c24; /* Dark red text */
+  background-color: #f8d7da; /* Light red background */
+  border-color: #f5c6cb; /* Lighter red border */
+}
+
+/* --- Ensure other styles are present --- */
 /* Recharts specific overrides (optional) */
 .recharts-legend-item { margin-right: 10px !important; }
 .recharts-tooltip-wrapper { border: 1px solid #ccc !important; box-shadow: 2px 2px 5px rgba(0,0,0,0.1) !important; border-radius: 4px !important; background-color: rgba(255, 255, 255, 0.9) !important; }
@@ -162,6 +189,9 @@ tbody tr:nth-child(even) { background-color: #f8f9fa; }
 .budget-input-group { position: relative; }
 .budget-input-group label { display: block; margin-bottom: 8px; }
 .budget-input-group input[type="number"] { padding-left: 30px; }
+.currency-symbol { position: absolute; left: 12px; top: 43px; color: #6c757d; font-size: 1rem; pointer-events: none; }
+.settings-container select { cursor: pointer; }
+.settings-container button[type="submit"] { padding: 12px 25px; min-width: 150px; width: auto; }
 .currency-symbol { position: absolute; left: 12px; top: 43px; color: #6c757d; font-size: 1rem; pointer-events: none; }
 .settings-container select { cursor: pointer; }
 .settings-container button[type="submit"] { padding: 12px 25px; min-width: 150px; width: auto; }
