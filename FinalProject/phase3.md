@@ -1,5 +1,21 @@
-I found that I had some issues with the alerts when 80" and 100% of the budget is used so I corrected that. This is what I added to my code to make it work I only had to change in dashboard.jsx and add styles in app.css.
+I found that I had some issues with the alerts when 80" and 100% of the budget is used so I corrected that.
+so the target is the following use case: **4. User Sets a Budget and Gets Alerts (Budgeting Feature)**
+Actors: User, System
 
+Preconditions: User must be logged in and have recorded expenses.
+
+Flow of Events:
+
+User navigates to "Settings" and sets a monthly budget.
+
+System stores the budget limit and tracks spending against it.
+
+When expenses reach 80% of the budget, the system sends a warning.
+
+If expenses exceed 100%, the system sends an alert.
+
+Outcome: User is notified when approaching or exceeding budget limits.
+Changes made to dashboard.jsx and app.css
 1. New State for Budget Alert
 Add this state variable near your other useState hooks:
 
