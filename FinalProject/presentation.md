@@ -113,7 +113,7 @@
 
 ---
 
-##Use Case 3 - User Views Expense Reports
+## Use Case 3 - User Views Expense Reports
 
 * **Planned Flow:** User navigates to Reports -> System fetches/aggregates data -> Displays graphs/stats by category -> Allows filtering (date, category, tag).
 * **Implementation Status:** **Implemented**
