@@ -298,7 +298,7 @@
 
 ## Total Hours Spent on Project
 
-
+I have spent 52 hours on this project
 
 ---
 
